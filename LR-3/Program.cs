@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Lab_3
 {
@@ -7,9 +6,9 @@ namespace Lab_3
     {
         protected int Speed;
         protected int Coordinates;
-        public int Acceleration;
+        protected int Acceleration;
 
-        public Vehicle()
+        protected Vehicle()
         {
             Speed = 0;
             Coordinates = 0;
@@ -23,6 +22,14 @@ namespace Lab_3
                 Speed = 0;
         }
 
+        public void SetAcceleration(int acce)
+        {
+            if (acce > 0)
+                Acceleration = acce;
+            else
+                Acceleration = 0; 
+        }
+        
         public virtual void Overclocking(int time)
         {
             Speed = Acceleration * time + Speed;
@@ -36,10 +43,10 @@ namespace Lab_3
 
     class Car : Vehicle
     {
-        public int Parking;
+        private int _parking;
         public Car()
         {
-            Parking = 0;
+            _parking = 0;
         }
 
         public int this[string status]
@@ -49,7 +56,7 @@ namespace Lab_3
                 switch (status)
                 {
                     case "PStatus":
-                        Parking = value;
+                        _parking = value;
                         break;
                     case "SStatus":
                         Speed = value;
@@ -64,7 +71,7 @@ namespace Lab_3
                 switch (status)
                 {
                     case "PStatus":
-                        return Parking;
+                        return _parking;
                     case "SStatus":
                         return Speed;
                     case "CStatus":
@@ -78,23 +85,23 @@ namespace Lab_3
         public void Revers()
         {
             Speed = Speed * (-1);
-            Parking = 0;
+            _parking = 0;
         }
 
         public void Drive()
         {
-            Parking = 0;
+            _parking = 0;
         }
 
         public void Park()
         {
-            Parking = 1;
+            _parking = 1;
             Speed = 0;
         }
 
         public override void Move(int time)
         {
-            if (Parking == 1)
+            if (_parking == 1)
             {
                 Console.WriteLine("Переключите коробку в режим вождения");
             }
@@ -106,7 +113,7 @@ namespace Lab_3
         
         public override void Overclocking(int time)
         {
-            if (Parking == 1)
+            if (_parking == 1)
             {
                 Console.WriteLine("Переключите коробку в режим вождения");
             }
@@ -123,7 +130,7 @@ namespace Lab_3
         {
             Car car = new Car();
             Console.Write("Введите ускорение вашего автомобиля: ");   
-            car.Acceleration = Convert.ToInt32(Console.ReadLine());
+            car.SetAcceleration(Convert.ToInt32(Console.ReadLine()));
             for (;;)
             {
                 bool globalCheck = false;
