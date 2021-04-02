@@ -7,7 +7,7 @@ namespace LR_4_1
     class Program
     {
         [DllImport("user32.dll")]
-        static extern int GetAsyncKeyState(Int32 i);
+        public static extern int GetAsyncKeyState(Int32 i);
         
         static void Main()
         {
