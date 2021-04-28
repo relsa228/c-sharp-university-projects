@@ -1,38 +1,52 @@
 ﻿namespace LR_5
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected int Speed;
+        protected int MaxSpeed;
         protected int Coordinates;
-        protected int Acceleration;
+        private int _acceleration;
+        protected int MaxAcceleration;
+        private int _braking;
+        protected int MaxBraking;
 
         protected Vehicle()
         {
             Speed = 0;
             Coordinates = 0;
-            Acceleration = 0;
+            _acceleration = 0;
+            MaxBraking = 0;
+            _braking = 0;
         }
         
-        public void Breaking(int speed, int time)
+        public void Braking(int time)
         {
-            Speed = Speed - speed * time;
+            Speed = Speed - _braking * time;
             if (Speed < 0)
                 Speed = 0;
+        }
+        
+        public void SetBraking(int br)
+        {
+            if (br > MaxBraking)
+                br = MaxBraking;
+            _braking = br > 0 ? br : 0;
         }
 
         public void SetAcceleration(int acc)
         {
-            if (acc > 0)
-                Acceleration = acc;
-            else
-                Acceleration = 0; 
+            if (acc > MaxAcceleration)
+                acc = MaxAcceleration;
+            _acceleration = acc > 0 ? acc : 0;
         }
-        
+
         public virtual void Overclocking(int time)
         {
-            Speed = Acceleration * time + Speed;
+            Speed = _acceleration * time + Speed;
+            if (Speed > MaxSpeed)
+                Speed = MaxSpeed;
         }
-        
+
         public virtual void Move(int time)
         {
             Coordinates = Coordinates + Speed * time;

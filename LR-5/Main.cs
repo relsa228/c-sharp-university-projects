@@ -6,10 +6,35 @@ namespace LR_5
     {
         static void Main()
         {
-            MkCar car = new MkCar();
-            car.MkChose();
-            Console.Write("\nВведите ускорение вашего автомобиля: ");   
-            car.SetAcceleration(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("Выберите машину: ");
+            Console.WriteLine("1. ГАЗ\n2. Жига\n3. Запорожец\n");
+            Car car = null;
+            bool stat = true;
+            while (stat)
+            {
+                Console.Write("\nВаш выбор: ");
+                int carChoice = Convert.ToInt32(Console.ReadLine());
+
+                switch (carChoice)
+                {
+                    case 1:
+                        car = new Gaz();
+                        stat = false;
+                        break;
+                    case 2:
+                        car = new Zhiga();
+                        stat = false;
+                        break;
+                    case 3:
+                        car = new Zaporozhec();
+                        stat = false;
+                        break;
+                    default:
+                        Console.WriteLine("Введите действительный номер.");
+                        break;
+                }
+            }
+
             for (;;)
             {
                 bool globalCheck = false;
@@ -22,6 +47,8 @@ namespace LR_5
                     case 1:
                         Console.Write("Укажите желаемое время разгона: ");
                         int time1 = Convert.ToInt32(Console.ReadLine()); 
+                        Console.Write("Укажите желамое ускорение: ");
+                        car.SetAcceleration(Convert.ToInt32(Console.ReadLine()));
                         car.Overclocking(time1); 
                         Console.WriteLine("Разгон завершен. Текущая скорость: " + car["SStatus"] + "\n");
                         break;
@@ -68,8 +95,8 @@ namespace LR_5
                         Console.Write("Укажите желаемое время торможения: ");
                         int timeB = Convert.ToInt32(Console.ReadLine()); 
                         Console.Write("Укажите желаемую скорость торможения: ");
-                        int speedB = Convert.ToInt32(Console.ReadLine()); 
-                        car.Breaking(speedB, timeB); 
+                        car.SetBraking(Convert.ToInt32(Console.ReadLine())); 
+                        car.Braking(timeB); 
                         Console.WriteLine("Торможение завершено. Текущая скорость: " + car["SStatus"] + "\n");
                         break;
                     
@@ -78,6 +105,8 @@ namespace LR_5
                         break;
                     
                     case 6:
+                        if (car["SStatus"] != 0)
+                            Console.Write("Выходить из машины на ходу - не самая лучшая идея, но кто я такой, чтобы вас судить? Приземление прошло неудачно, и вы сломали шею. Хорошего дня:3");
                         globalCheck = true;
                         break;
                     

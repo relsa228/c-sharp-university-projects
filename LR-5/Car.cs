@@ -5,6 +5,8 @@ namespace LR_5
     class Car : Vehicle
     {
         private int _parking;
+        protected string Mk;
+
         public Car()
         {
             _parking = 0;
@@ -52,6 +54,8 @@ namespace LR_5
         public void Drive()
         {
             _parking = 0;
+            if (Speed < 0)
+                Speed = Speed * (-1);
         }
 
         public void Park()
@@ -63,25 +67,22 @@ namespace LR_5
         public override void Move(int time)
         {
             if (_parking == 1)
-            {
                 Console.WriteLine("Переключите коробку в режим вождения");
-            }
             else
-            {
-                Coordinates = Coordinates + Speed * time;
-            }
+                base.Move(time);
         }
-        
+
         public override void Overclocking(int time)
         {
             if (_parking == 1)
-            {
                 Console.WriteLine("Переключите коробку в режим вождения");
-            }
-            else
-            {
-                Speed = Acceleration * time + Speed;
-            }
+            else 
+                base.Overclocking(time);
+        }
+        
+        public string MkStatus()
+        {
+            return Mk;
         }
     }
 }
