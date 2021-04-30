@@ -1,10 +1,10 @@
-﻿namespace LR_5
+﻿namespace LR_6
 {
-    class Gaz : Car
+    class Volga : Car
     {
-        public Gaz()
+        public Volga()
         {
-            Mk = "ГАЗ";
+            Mk = "Волга";
             MaxAcceleration = 5;
             MaxSpeed = 45;
             MaxBraking = 2;

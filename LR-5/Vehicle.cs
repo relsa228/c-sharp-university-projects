@@ -1,4 +1,6 @@
-﻿namespace LR_5
+﻿using System;
+
+namespace LR_5
 {
     abstract class Vehicle
     {
@@ -21,6 +23,7 @@
         
         public void Braking(int time)
         {
+            Coordinates = (int) (Coordinates + Speed * time - (_braking * Math.Pow(time,2) / 2));
             Speed = Speed - _braking * time;
             if (Speed < 0)
                 Speed = 0;
@@ -42,6 +45,7 @@
 
         public virtual void Overclocking(int time)
         {
+            Coordinates = (int) (Coordinates + Speed * time + (_acceleration * Math.Pow(time,2) / 2));
             Speed = _acceleration * time + Speed;
             if (Speed > MaxSpeed)
                 Speed = MaxSpeed;

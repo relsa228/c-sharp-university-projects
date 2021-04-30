@@ -6,35 +6,64 @@ namespace LR_6
     {
         static void Main()
         {
-            MkCar car = new MkCar();
-            Console.Write("\nВведите ускорение вашего автомобиля: ");   
-            ((IMove) car).SetAcceleration(Convert.ToInt32(Console.ReadLine()));
-            car.MkChose();
+            IClutch clutch = new Clutch();
+            Console.WriteLine("Выберите машину: ");
+            Console.WriteLine("1. Волга\n2. Жига\n3. Запорожец\n");
+            Car car = null;
+            bool stat = true;
+            while (stat)
+            {
+                Console.Write("Ваш выбор: ");
+                int carChoice = Convert.ToInt32(Console.ReadLine());
+
+                switch (carChoice)
+                {
+                    case 1:
+                        car = new Volga();
+                        stat = false;
+                        break;
+                    case 2:
+                        car = new Zhiga();
+                        stat = false;
+                        break;
+                    case 3:
+                        car = new Zaporozhec();
+                        stat = false;
+                        break;
+                    default:
+                        Console.WriteLine("\nВведите действительный номер.");
+                        break;
+                }
+            }
+
             for (;;)
             {
                 bool globalCheck = false;
-                Console.WriteLine("Список воозможных действий: ");
-                Console.WriteLine("1. Разгон\n2. Движение\n3. Переключить коробку передач\n4. Торможение\n5. Узнать марку\n6. Выйти из машины");
+                Console.WriteLine("\nСписок воозможных действий: ");
+                Console.WriteLine("1. Разгон\n2. Движение\n3. Переключить коробку передач\n4. Торможение\n5. Узнать марку\n6. Сравнить машины\n7. Выйти из машины");
                 Console.Write("\nВыберите действие: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
                     case 1:
-                        Console.Write("Укажите желаемое время разгона: ");
+                        Console.Write("\nУкажите желаемое время разгона: ");
                         int time1 = Convert.ToInt32(Console.ReadLine()); 
-                        ((IMove) car).Overclocking(time1); 
-                        Console.WriteLine("Разгон завершен. Текущая скорость: " + car["SStatus"] + "\n");
+                        Console.Write("Укажите желамое ускорение: ");
+                        car.SetAcceleration(Convert.ToInt32(Console.ReadLine()));
+                        car.Overclocking(time1); 
+                        Console.WriteLine("\nРазгон завершен. Текущая скорость: " + car["SStatus"]);
+                        Console.WriteLine("Текущие координаты: " + car["CStatus"] + "\n");
                         break;
                     
                     case 2:
-                         Console.Write("Укажите желаемое время движения: ");
+                         Console.Write("\nУкажите желаемое время движения: ");
                          int time = Convert.ToInt32(Console.ReadLine());
-                         ((IMove) car).Move(time); 
+                         car.Move(time); 
                          Console.WriteLine("Движение завершено. Текущие координаты: " + car["CStatus"] + "\n");
                          break;
                     
                     case 3:
-                        Console.WriteLine("Доступные передачи:\n1. Drive\n2. Parking\n3. Revers");
+                        Console.WriteLine("\nДоступные передачи:\n1. Drive\n2. Parking\n3. Revers");
                         Console.Write("\nВыберите передачу: ");
                         for (;;)
                         {
@@ -43,16 +72,16 @@ namespace LR_6
                             switch (transmis)
                             {
                                 case 1:
-                                    car.Drive();
+                                    clutch.StartDrive(car);
                                     check = true;
                                     break;
                                 case 2:
                                     check = true;
-                                    car.Park();
+                                    clutch.StartPark(car);
                                     break;
                                 case 3:
                                     check = true;
-                                    car.Revers();
+                                    clutch.StartRevers(car);
                                     break;
                                 default:
                                     Console.WriteLine("Введите действительный номер: ");
@@ -65,19 +94,47 @@ namespace LR_6
                         break;
                     
                     case 4:
-                        Console.Write("Укажите желаемое время торможения: ");
+                        Console.Write("\nУкажите желаемое время торможения: ");
                         int timeB = Convert.ToInt32(Console.ReadLine()); 
                         Console.Write("Укажите желаемую скорость торможения: ");
-                        int speedB = Convert.ToInt32(Console.ReadLine()); 
-                        ((IMove) car).Breaking(speedB, timeB); 
-                        Console.WriteLine("Торможение завершено. Текущая скорость: " + car["SStatus"] + "\n");
+                        car.SetBraking(Convert.ToInt32(Console.ReadLine())); 
+                        car.Braking(timeB); 
+                        Console.WriteLine("\nТорможение завершено. Текущая скорость: " + car["SStatus"]);
+                        Console.WriteLine("Текущие координаты: " + car["CStatus"] + "\n");
                         break;
                     
                     case 5:
-                        Console.Write("Марка вашего автомобиля: " + car.MkStatus() + "\n\n");
+                        Console.Write("\nМарка вашего автомобиля: " + car.MkStatus() + "\n\n");
                         break;
                     
                     case 6:
+                        if(car.Equals(new Volga()))
+                            Console.WriteLine("\nВолга: одинаковые");
+                        else
+                            Console.WriteLine("\nВолга: разные");
+                        
+                        if(car.Equals(new Zhiga()))
+                            Console.WriteLine("Жига: одинаковые");
+                        else
+                            Console.WriteLine("Жига: разные");
+                        
+                        if(car.Equals(new Zaporozhec()))
+                            Console.Write("Запорожец: одинаковые\n");
+                        else
+                            Console.Write("Запорожец: разные\n");
+                        break;
+
+                    case 7:
+                        if (car["SStatus"] != 0)
+                        {
+                            Console.Write("Я понимаю, что представленный модельный ряд мягко говоря удручает, но все же выходить из машины на ходу - не самая лучшая идея. Хотя кто я такой, чтобы вас судить?");
+                            Random alive = new Random();
+                            int value = alive.Next(0, 2); 
+                            if (value == 1)
+                                Console.WriteLine("\n\nНу ничего себе. Вспомнив уроки гимнастики времен младшей школы вы сгруппировались и пережили падение, поразив проезжающих мимо.");
+                            else if (value == 0)
+                                Console.WriteLine("\n\nПриземление прошло довольно неудачно, вы сломали шею. Ну что ж, бывает.");
+                        }
                         globalCheck = true;
                         break;
                     

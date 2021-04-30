@@ -7,7 +7,7 @@ namespace LR_5
         private int _parking;
         protected string Mk;
 
-        public Car()
+        protected Car()
         {
             _parking = 0;
         }

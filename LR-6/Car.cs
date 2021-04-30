@@ -2,9 +2,11 @@
 
 namespace LR_6
 {
-    class Car : Vehicle, IMove
+    class Car : Vehicle, ITransmission
     {
         private int _parking;
+        protected string Mk;
+
         public Car()
         {
             _parking = 0;
@@ -52,6 +54,8 @@ namespace LR_6
         public void Drive()
         {
             _parking = 0;
+            if (Speed < 0)
+                Speed = Speed * (-1);
         }
 
         public void Park()
@@ -60,43 +64,25 @@ namespace LR_6
             Speed = 0;
         }
 
-        void IMove.Move(int time)
+        public override void Move(int time)
         {
             if (_parking == 1)
-            {
                 Console.WriteLine("Переключите коробку в режим вождения");
-            }
             else
-            {
-                Coordinates = Coordinates + Speed * time;
-            }
-        }
-        
-        void IMove.Overclocking(int time)
-        {
-            if (_parking == 1)
-            {
-                Console.WriteLine("Переключите коробку в режим вождения");
-            }
-            else
-            {
-                Speed = Acceleration * time + Speed;
-            }
-        }
-        
-        void IMove.Breaking(int speed, int time)
-        {
-            Speed = Speed - speed * time;
-            if (Speed < 0)
-                Speed = 0;
+                base.Move(time);
         }
 
-        void IMove.SetAcceleration(int acc)
+        public override void Overclocking(int time)
         {
-            if (acc > 0)
-                Acceleration = acc;
-            else
-                Acceleration = 0; 
+            if (_parking == 1)
+                Console.WriteLine("Переключите коробку в режим вождения");
+            else 
+                base.Overclocking(time);
+        }
+        
+        public string MkStatus()
+        {
+            return Mk;
         }
     }
 }
