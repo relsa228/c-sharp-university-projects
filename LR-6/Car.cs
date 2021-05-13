@@ -64,7 +64,7 @@ namespace LR_6
             Speed = 0;
         }
 
-        public override void Move(int time)
+        public void Move(int time)
         {
             if (_parking == 1)
                 Console.WriteLine("Переключите коробку в режим вождения");
@@ -72,17 +72,21 @@ namespace LR_6
                 base.Move(time);
         }
 
-        public override void Overclocking(int time)
+        public void Overclocking(int time)
         {
             if (_parking == 1)
                 Console.WriteLine("Переключите коробку в режим вождения");
-            else 
+            else
                 base.Overclocking(time);
         }
-        
+
         public string MkStatus()
         {
             return Mk;
+        }
+        
+        public virtual void Beep()
+        {
         }
     }
 }

@@ -40,7 +40,7 @@ namespace LR_6
             {
                 bool globalCheck = false;
                 Console.WriteLine("\nСписок воозможных действий: ");
-                Console.WriteLine("1. Разгон\n2. Движение\n3. Переключить коробку передач\n4. Торможение\n5. Узнать марку\n6. Сравнить машины\n7. Выйти из машины");
+                Console.WriteLine("1. Разгон\n2. Движение\n3. Переключить коробку передач\n4. Торможение\n5. Узнать марку\n6. Сравнить машины\n7. Бибикнуть\n8. Выйти из машины");
                 Console.Write("\nВыберите действие: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -123,8 +123,12 @@ namespace LR_6
                         else
                             Console.Write("Запорожец: разные\n");
                         break;
-
+                    
                     case 7:
+                        car.Beep();
+                        break;
+
+                    case 8:
                         if (car["SStatus"] != 0)
                         {
                             Console.Write("Я понимаю, что представленный модельный ряд мягко говоря удручает, но все же выходить из машины на ходу - не самая лучшая идея. Хотя кто я такой, чтобы вас судить?");

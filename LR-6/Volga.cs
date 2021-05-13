@@ -1,4 +1,6 @@
-﻿namespace LR_6
+﻿using System;
+
+namespace LR_6
 {
     class Volga : Car
     {
@@ -8,6 +10,11 @@
             MaxAcceleration = 5;
             MaxSpeed = 45;
             MaxBraking = 2;
+        }
+        
+        public override void Beep()
+        {   
+            Console.WriteLine("Бип-би-бип. Вы бибикнули.");
         }
     }
 }

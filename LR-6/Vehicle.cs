@@ -43,7 +43,7 @@ namespace LR_6
             _acceleration = acc > 0 ? acc : 0;
         }
 
-        public virtual void Overclocking(int time)
+        public void Overclocking(int time)
         {
             Coordinates = (int) (Coordinates + Speed * time + (_acceleration * Math.Pow(time,2) / 2));
             Speed = _acceleration * time + Speed;
@@ -51,7 +51,7 @@ namespace LR_6
                 Speed = MaxSpeed;
         }
 
-        public virtual void Move(int time)
+        public void Move(int time)
         {
             Coordinates = Coordinates + Speed * time;
         }
