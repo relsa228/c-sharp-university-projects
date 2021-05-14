@@ -35,10 +35,10 @@ namespace LR_6
                         break;
                 }
             }
-
-            for (;;)
+            
+            bool globalCheck = true;
+            while (globalCheck)
             {
-                bool globalCheck = false;
                 Console.WriteLine("\nСписок воозможных действий: ");
                 Console.WriteLine("1. Разгон\n2. Движение\n3. Переключить коробку передач\n4. Торможение\n5. Узнать марку\n6. Сравнить машины\n7. Бибикнуть\n8. Выйти из машины");
                 Console.Write("\nВыберите действие: ");
@@ -139,15 +139,13 @@ namespace LR_6
                             else if (value == 0)
                                 Console.WriteLine("\n\nПриземление прошло довольно неудачно, вы сломали шею. Ну что ж, бывает.");
                         }
-                        globalCheck = true;
+                        globalCheck = false;
                         break;
                     
                     default: 
                         Console.WriteLine("Такого действия не существует");
                         break;
                 }
-                if (globalCheck)
-                    break;
             }
         }
     }
