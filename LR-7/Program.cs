@@ -90,19 +90,6 @@ namespace LR_7
                         break;
                 }
             }
-            /*Fraction fr1 = new Fraction();
-             fr1.Denominator = 3;
-             fr1.Numerator = 1;
-             Fraction fr2 = new Fraction();
-             fr2.Denominator = 4;
-             fr2.Numerator = 1;
-             //String str = Console.ReadLine();
-             //fr2.FromString(str);
-             
-             Fraction result = fr1 / fr2;
-             
-             Console.WriteLine(result.Denominator);
-             Console.WriteLine(result.Numerator);*/
         }
     }
 }
