@@ -4,7 +4,21 @@
     <projectFile>LR-7/LR-7.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="" />
+    <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Airport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Jornal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +28,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1z0DmS9hq07a6IE3flRmHno0Fk4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -53,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633276280765</updated>
-      <workItem from="1633276326009" duration="653000" />
+      <workItem from="1633276326009" duration="2320000" />
     </task>
     <servers />
   </component>
@@ -63,7 +80,19 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

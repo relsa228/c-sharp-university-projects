@@ -1,7 +1,7 @@
 ﻿using System;
-using LR_4.Collections;
+using System.Collections.Generic;
 
-namespace LR_4.Entities
+namespace LR_7.Entities
 {
     public delegate void BuyTicket();
     public delegate void TicketBaseChanging(Ticket ticket, bool operation); 
@@ -13,8 +13,8 @@ namespace LR_4.Entities
         public event PassengerBaseChanging OnPChanging;
         public event TicketBaseChanging OnTChanging;
 
-        private MyCustomCollection<Ticket> _ticketBase = new MyCustomCollection<Ticket>();
-        private MyCustomCollection<Passenger> _passengerBase = new MyCustomCollection<Passenger>();
+        private Dictionary<string,Ticket> _ticketBase = new Dictionary<string,Ticket>();
+        private List<Passenger> _passengerBase = new List<Passenger>();
         
         private float _totalSum;
         private int _suitable;

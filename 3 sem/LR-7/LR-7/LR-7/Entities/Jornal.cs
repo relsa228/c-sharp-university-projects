@@ -1,12 +1,12 @@
 ﻿using System;
-using LR_4.Collections;
+using System.Collections.Generic;
 
-namespace LR_4.Entities
+namespace LR_7.Entities
 {
     public class Jornal
     {
-        private MyCustomCollection<string> _ticketJornal = new MyCustomCollection<string>();
-        private MyCustomCollection<string> _passengerJornal = new MyCustomCollection<string>();
+        private List<string> _ticketJornal = new List<string>();
+        private List<string> _passengerJornal = new List<string>();
 
         public void ViewLog()
         {
@@ -42,7 +42,7 @@ namespace LR_4.Entities
         {
             string record = "";
             if (operation)
-                 record = "\nДобавлен билет:" + ticket.Info();
+                record = "\nДобавлен билет:" + ticket.Info();
             else if (ticket != null)
                 record = "\nУдален билет:" + ticket.Info();
             _ticketJornal.Add(record);   
