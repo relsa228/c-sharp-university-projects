@@ -4,15 +4,14 @@ namespace LR_7.Entities
 {
     public class Ticket : IComparable
     {
-        private string _startPoint;
-        private string _finishPoint;
+        public string FinishPoint;
         public float Price { get; set; }
         private string _bortNum;
+        private string Type;
         private string _date;
         public Ticket()
         {
-            _startPoint = "";
-            _finishPoint = "";
+            FinishPoint = "";
             Price = 0;
             _bortNum = "";
             _date = "";
@@ -20,37 +19,32 @@ namespace LR_7.Entities
 
         public bool FindSuitable(string startPoint, string finishPoint)
         {
-            if (this._startPoint == startPoint && this._finishPoint == finishPoint)
+            if (this.FinishPoint == finishPoint)
                 return true;
             return false;
         }
 
         public void AddNewTicket()
         {
-            Console.Write("\nИнформация о билете\nВведите пункт отправления: ");
-            this._startPoint = Console.ReadLine();
-            Console.Write("Введите пункт прибытия: ");
-            this._finishPoint = Console.ReadLine();
+            Console.Write("\nИнформация о билете\nВведите тип билета: ");
+            this.FinishPoint = Console.ReadLine();
             Console.Write("Введите номер борта: ");
             this._bortNum = Console.ReadLine();
             Console.Write("Введите дату вылета (DD/MM/YYYY): ");
             this._date = Console.ReadLine();
-            Console.Write("Введите цену билета: ");
-            this.Price = Convert.ToSingle(Console.ReadLine());
         }
 
         public string Info()
         {
-            string info = "\nНомер рейса: " + this._bortNum + "\nТочка отправления: " + this._startPoint +
-                          "\nТочка прибытия: " + this._finishPoint + "\nДата вылета: " + this._date
-                          + "\nЦена билета: " + this.Price + " рублей";
+            string info = "\nНомер рейса: " + this._bortNum + "\nТочка прибытия: " + this.FinishPoint + "\nДата вылета: "
+                          + this._date + "\nЦена билета: " + this.Price + " рублей";
             return info;
         }
 
         public int CompareTo(object obj)
         {
             Ticket temp = obj as Ticket;
-            if (temp != null && temp._startPoint == this._startPoint && temp._finishPoint == this._finishPoint && 
+            if (temp != null && temp.FinishPoint == this.FinishPoint && 
                 temp._date == this._date && temp._bortNum == this._bortNum && temp.Price == this.Price)
                 return 0;
             return 1;

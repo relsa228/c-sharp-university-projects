@@ -71,16 +71,13 @@ namespace LR_4.Entities
 
         public void BuyTicket(Passenger passenger)
         {
-            String startPoint, finishPoint;
-            
-            Console.Write("\nВведите пункт отправления: "); 
-            startPoint = Console.ReadLine();
-            Console.Write("Введите пункт назначения: ");
+            String finishPoint;
+            Console.Write("\nВведите пункт назначения: ");
             finishPoint = Console.ReadLine();
                         
             Console.Write("\nВам подойдут следующие рейсы: ");
             for (int i = 1; i <= _ticketBase.Count; i++)
-                if (_ticketBase[i].FindSuitable(startPoint, finishPoint))
+                if (_ticketBase[i].FindSuitable(finishPoint))
                 { 
                     Console.Write("\nНомер билета: " + i);
                     Console.WriteLine(_ticketBase[i].Info()); 

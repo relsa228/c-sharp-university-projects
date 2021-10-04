@@ -18,14 +18,14 @@ namespace LR_7.Entities
 
                 if (choose == 1)
                 {
-                    for (int i = 1; i <= _passengerJornal.Count; i++)
+                    for (int i = 0; i < _passengerJornal.Count; i++)
                         Console.WriteLine(_passengerJornal[i]);
                     return;
                 }
 
                 if (choose == 2)
                 {
-                    for (int i = 1; i <= _ticketJornal.Count; i++)
+                    for (int i = 0; i < _ticketJornal.Count; i++)
                         Console.WriteLine(_ticketJornal[i]);
                     return;
                 }

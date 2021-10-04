@@ -13,8 +13,9 @@ namespace LR_7.Entities
         public event PassengerBaseChanging OnPChanging;
         public event TicketBaseChanging OnTChanging;
 
-        private Dictionary<string,Ticket> _ticketBase = new Dictionary<string,Ticket>();
+        private Dictionary<string,List<Taxe>> _taxeBase = new Dictionary<string,List<Taxe>>();
         private List<Passenger> _passengerBase = new List<Passenger>();
+        private List<Ticket> _ticketBase = new List<Ticket>();
         
         private float _totalSum;
         private int _suitable;
@@ -36,7 +37,7 @@ namespace LR_7.Entities
             if (reg == 1)
             {
                 passenger.Registration();
-                for (int i = 1; i <= _passengerBase.Count; i++) 
+                for (int i = 0; i < _passengerBase.Count; i++) 
                     if (_passengerBase[i].PassportNum == passenger.PassportNum) 
                     {
                         Console.WriteLine("Такой пассажир уже зарегестрирован. Если вы этого не дел" +
@@ -54,7 +55,7 @@ namespace LR_7.Entities
             {
                 Console.Write("\nВведите номер вашего пасспорта: ");
                 string passport = Console.ReadLine(); 
-                for (int i = 1; i <= _passengerBase.Count; i++) 
+                for (int i = 0; i < _passengerBase.Count; i++) 
                     if (_passengerBase[i].PassportNum == passport) 
                     {
                         passenger = _passengerBase[i]; 
@@ -79,7 +80,7 @@ namespace LR_7.Entities
             finishPoint = Console.ReadLine();
                         
             Console.Write("\nВам подойдут следующие рейсы: ");
-            for (int i = 1; i <= _ticketBase.Count; i++)
+            for (int i = 0; i < _ticketBase.Count; i++)
                 if (_ticketBase[i].FindSuitable(startPoint, finishPoint))
                 { 
                     Console.Write("\nНомер билета: " + i);
@@ -95,7 +96,7 @@ namespace LR_7.Entities
 
             Console.Write("\nВаш выбор: ");
             int indexTic = Convert.ToInt32(Console.ReadLine());
-            if (indexTic <= _ticketBase.Count)
+            if (indexTic < _ticketBase.Count)
             {
                 Ticket temp = _ticketBase[indexTic]; 
                 _totalSum += temp.Price;
@@ -111,11 +112,21 @@ namespace LR_7.Entities
         {
             Ticket ticket = new Ticket();
             ticket.AddNewTicket();
+            Taxe taxe = _taxeBase[ticket.FinishPoint];
+            ticket.Price = taxe.Price;
             _ticketBase.Add(ticket);
             OnTChanging?.Invoke(ticket, true);
             Console.Write("\nБилет добавлен.");
         }
 
+        private void AddTaxe()
+        {
+            Taxe taxe = new Taxe();
+            taxe.AddTaxe(); 
+            _taxeBase.Add(taxe.EndPoint ,taxe);
+            Console.Write("\nТариф добавлен.");
+        }
+        
         public void ReturnPrice()
         {
             Console.Write("\nВыберите вариант:\n1. Для одного пассажира\n2. " +
@@ -142,42 +153,44 @@ namespace LR_7.Entities
             Console.Write("\nКакую базу необходимо изменить:\n1. Базу пассажиров\n2. Базу" +
                               " билетов\nВаш выбор: ");
             int firstChoose = Convert.ToInt32(Console.ReadLine());
-            if (firstChoose == 1)
+            switch (firstChoose)
             {
-                Console.Write("\nБаза пассажиров:\n");
+                case 1:
+                    Console.Write("\nБаза пассажиров:\n");
                 
-                for (int i = 1; i <= _passengerBase.Count; i++)
-                    if (_passengerBase[i] != null)
-                        Console.Write("\nНомер пассажира: " + i + _passengerBase[i].Info() + "\n");
+                    for (int i = 0; i < _passengerBase.Count; i++)
+                        if (_passengerBase[i] != null)
+                            Console.Write("\nНомер пассажира: " + i + _passengerBase[i].Info() + "\n");
                 
-                Console.Write("\n");
-                this.DeletePassanger();
-                return;
-            }
-            if (firstChoose == 2)
-            {
-                Console.Write("\nБаза билетов:\n");
+                    Console.Write("\n");
+                    this.DeletePassanger();
+                    break;
                 
-                for (int i = 1; i <= _ticketBase.Count; i++)
-                    Console.Write("\nНомер билета: " + i + _ticketBase[i].Info() + "\n");
+                case 2:
+                    Console.Write("\nБаза билетов:\n");
                 
-                Console.Write("\n");
+                    for (int i = 1; i <= _ticketBase.Count; i++)
+                        Console.Write("\nНомер билета: " + i + _ticketBase[i].Info() + "\n");
                 
-                Console.Write("\nЧто вы хотите сделать:\n1. Добавить билет\n2. Удалить" +
+                    Console.Write("\n");
+                
+                    Console.Write("\nЧто вы хотите сделать:\n1. Добавить билет\n2. Удалить" +
                                   " билет\nВаш выбор: ");
-                int secondChoose = Convert.ToInt32(Console.ReadLine());
-                if (secondChoose == 1)
-                {
-                    this.AddTicket();
-                    return;
-                }
-                if (secondChoose == 2)
-                {
-                    this.DeleteTicket();
-                    return;
-                }
+                    int secondChoose = Convert.ToInt32(Console.ReadLine());
+                    if (secondChoose == 1)
+                        this.AddTicket();
+                    if (secondChoose == 2)
+                        this.DeleteTicket();
+                    break;
+                    
+                case 3:
+                    
+                    break;
+
+                default:
+                    Console.WriteLine("Неверный ввод.");
+                    break;
             }
-            Console.WriteLine("Неверный ввод.");
         }
 
         private void DeletePassanger()

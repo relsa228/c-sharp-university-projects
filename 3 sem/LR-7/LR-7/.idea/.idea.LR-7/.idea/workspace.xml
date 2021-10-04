@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Airport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Jornal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/Entities/Ticket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/LR-5.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/ref/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/bin/Debug/net5.0/ref/LR-5.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/LR-5.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/ref/LR-5.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR-5/LR-5/obj/Debug/net5.0/ref/LR-5.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633276280765</updated>
-      <workItem from="1633276326009" duration="2990000" />
+      <workItem from="1633276326009" duration="3948000" />
+      <workItem from="1633346390059" duration="2830000" />
     </task>
     <servers />
   </component>
@@ -78,7 +80,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -90,6 +92,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

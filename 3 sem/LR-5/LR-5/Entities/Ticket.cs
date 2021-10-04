@@ -11,25 +11,23 @@ namespace LR_4.Entities
         private string _date;
         public Ticket()
         {
-            _startPoint = "";
+            _startPoint = "Национальный Императорский аэропорт России";
             _finishPoint = "";
             Price = 0;
             _bortNum = "";
             _date = "";
         }
 
-        public bool FindSuitable(string startPoint, string finishPoint)
+        public bool FindSuitable(string finishPoint)
         {
-            if (this._startPoint == startPoint && this._finishPoint == finishPoint)
+            if (this._finishPoint == finishPoint)
                 return true;
             return false;
         }
 
         public void AddNewTicket()
         {
-            Console.Write("\nИнформация о билете\nВведите пункт отправления: ");
-            this._startPoint = Console.ReadLine();
-            Console.Write("Введите пункт прибытия: ");
+            Console.Write("\nИнформация о билете\nВведите пункт прибытия: ");
             this._finishPoint = Console.ReadLine();
             Console.Write("Введите номер борта: ");
             this._bortNum = Console.ReadLine();
