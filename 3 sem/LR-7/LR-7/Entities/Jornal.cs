@@ -7,30 +7,37 @@ namespace LR_7.Entities
     {
         private List<string> _ticketJornal = new List<string>();
         private List<string> _passengerJornal = new List<string>();
+        private List<string> _taxeJornal = new List<string>();
 
         public void ViewLog()
         {
             try
             {
                 Console.Write("\nКакой журнал нужно просмотреть:\n1. Журнал изменения базы " +
-                              "пассажиров\n2. Журнал изменения базы билетов\nВаш выбор: ");
+                              "пассажиров\n2. Журнал изменения базы билетов\n3. Журнал изменения " +
+                              "базы тарифов\nВаш выбор: ");
                 int choose = Convert.ToInt32(Console.ReadLine());
-
-                if (choose == 1)
+                switch (choose)
                 {
-                    for (int i = 0; i < _passengerJornal.Count; i++)
-                        Console.WriteLine(_passengerJornal[i]);
-                    return;
+                    case 1:
+                        for (int i = 0; i < _passengerJornal.Count; i++)
+                            Console.WriteLine(_passengerJornal[i]);
+                        break;
+                    
+                    case 2:
+                        for (int i = 0; i < _ticketJornal.Count; i++)
+                            Console.WriteLine(_ticketJornal[i]);
+                        break;
+                    
+                    case 3:
+                        for (int i = 0; i < _taxeJornal.Count; i++)
+                            Console.WriteLine(_taxeJornal[i]);
+                        break;
+                    
+                    default:
+                        Console.WriteLine("Неверный ввод");
+                        break;
                 }
-
-                if (choose == 2)
-                {
-                    for (int i = 0; i < _ticketJornal.Count; i++)
-                        Console.WriteLine(_ticketJornal[i]);
-                    return;
-                }
-
-                Console.WriteLine("Неверный ввод");
             }
             catch (FormatException e)
             {
@@ -56,6 +63,16 @@ namespace LR_7.Entities
             else if (passenger != null) 
                 record = "\nУдален пассажир:" + passenger.Info();
             _passengerJornal.Add(record);    
+        }
+        
+        public void ChTaxe(Taxe taxe, bool operation)
+        {
+            string record = "";
+            if (operation)
+                record = "\nДобавлен тариф:" + taxe.Info();
+            else if (taxe != null) 
+                record = "\nУдален тариф:" + taxe.Info();
+            _taxeJornal.Add(record);    
         }
     }
 }

@@ -11,7 +11,7 @@ namespace LR_7.Entities
         private string _gender;
         public string PassportNum { get; set; }
         public float TotalSum { get; set; }
-        private List<Ticket> _inPropertyTicket;
+        public List<Ticket> _inPropertyTicket;
         
         public Passenger()
         {

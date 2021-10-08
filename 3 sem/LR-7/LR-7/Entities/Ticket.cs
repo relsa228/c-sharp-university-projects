@@ -17,7 +17,7 @@ namespace LR_7.Entities
             _date = "";
         }
 
-        public bool FindSuitable(string startPoint, string finishPoint)
+        public bool FindSuitable(string finishPoint)
         {
             if (this.FinishPoint == finishPoint)
                 return true;
@@ -26,7 +26,7 @@ namespace LR_7.Entities
 
         public void AddNewTicket()
         {
-            Console.Write("\nИнформация о билете\nВведите тип билета: ");
+            Console.Write("\nИнформация о билете\nВведите пункт назначения: ");
             this.FinishPoint = Console.ReadLine();
             Console.Write("Введите номер борта: ");
             this._bortNum = Console.ReadLine();

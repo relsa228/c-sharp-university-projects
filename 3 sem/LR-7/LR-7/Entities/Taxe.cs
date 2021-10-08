@@ -18,7 +18,7 @@ namespace LR_7.Entities
         {
             Console.Write("\nИнформация о тарифе\nВведите пункт прибытия: ");
             this.EndPoint = Console.ReadLine();
-            Console.Write("Введите номер борта: ");
+            Console.Write("Введите цену билета: ");
             this.Price = Convert.ToSingle(Console.ReadLine());
         }
         

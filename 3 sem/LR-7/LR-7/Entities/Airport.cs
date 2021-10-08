@@ -6,14 +6,17 @@ namespace LR_7.Entities
     public delegate void BuyTicket();
     public delegate void TicketBaseChanging(Ticket ticket, bool operation); 
     public delegate void PassengerBaseChanging(Passenger passenger, bool operation); 
+    public delegate void TaxeBaseChanging(Taxe taxe, bool operation); 
     
     public class Airport
     {
         public event BuyTicket OnBuy;
         public event PassengerBaseChanging OnPChanging;
         public event TicketBaseChanging OnTChanging;
+        public event TaxeBaseChanging OnTaxeChanging;
 
-        private Dictionary<string,List<Taxe>> _taxeBase = new Dictionary<string,List<Taxe>>();
+        private Dictionary<string,Taxe> _taxeBase = new Dictionary<string,Taxe>();
+        private List<string> _direction = new List<string>();
         private List<Passenger> _passengerBase = new List<Passenger>();
         private List<Ticket> _ticketBase = new List<Ticket>();
         
@@ -72,16 +75,14 @@ namespace LR_7.Entities
 
         public void BuyTicket(Passenger passenger)
         {
-            String startPoint, finishPoint;
+            String finishPoint;
             
-            Console.Write("\nВведите пункт отправления: "); 
-            startPoint = Console.ReadLine();
             Console.Write("Введите пункт назначения: ");
             finishPoint = Console.ReadLine();
                         
             Console.Write("\nВам подойдут следующие рейсы: ");
             for (int i = 0; i < _ticketBase.Count; i++)
-                if (_ticketBase[i].FindSuitable(startPoint, finishPoint))
+                if (_ticketBase[i].FindSuitable(finishPoint))
                 { 
                     Console.Write("\nНомер билета: " + i);
                     Console.WriteLine(_ticketBase[i].Info()); 
@@ -101,6 +102,7 @@ namespace LR_7.Entities
                 Ticket temp = _ticketBase[indexTic]; 
                 _totalSum += temp.Price;
                 passenger.TotalSum += temp.Price;
+                passenger._inPropertyTicket.Add(temp);
                 OnBuy?.Invoke();
                 return;
             }
@@ -112,18 +114,25 @@ namespace LR_7.Entities
         {
             Ticket ticket = new Ticket();
             ticket.AddNewTicket();
-            Taxe taxe = _taxeBase[ticket.FinishPoint];
-            ticket.Price = taxe.Price;
-            _ticketBase.Add(ticket);
-            OnTChanging?.Invoke(ticket, true);
-            Console.Write("\nБилет добавлен.");
+            if (_taxeBase[ticket.FinishPoint] != null)
+            {
+                Taxe taxe = _taxeBase[ticket.FinishPoint];
+                ticket.Price = taxe.Price;
+                _ticketBase.Add(ticket);
+                OnTChanging?.Invoke(ticket, true);
+                Console.Write("\nБилет добавлен.");
+            }
+            else
+                Console.Write("\nОшибка.");
         }
 
         private void AddTaxe()
         {
             Taxe taxe = new Taxe();
             taxe.AddTaxe(); 
+            _direction.Add(taxe.EndPoint);
             _taxeBase.Add(taxe.EndPoint ,taxe);
+            OnTaxeChanging?.Invoke(taxe, true);
             Console.Write("\nТариф добавлен.");
         }
         
@@ -136,7 +145,7 @@ namespace LR_7.Entities
             {
                 Console.Write("\nИндекс пассажира в списке: ");
                 int index = Convert.ToInt32(Console.ReadLine());
-                if (index <= _passengerBase.Count)
+                if (index < _passengerBase.Count)
                 {
                     Passenger temp = _passengerBase[index];
                     Console.Write("Данный пассажир купил билетов на сумму: " + temp.TotalSum + " рублей.");
@@ -151,7 +160,7 @@ namespace LR_7.Entities
         public void ChangeBase()
         {
             Console.Write("\nКакую базу необходимо изменить:\n1. Базу пассажиров\n2. Базу" +
-                              " билетов\nВаш выбор: ");
+                              " билетов\n3. Базу тарифов\nВаш выбор: ");
             int firstChoose = Convert.ToInt32(Console.ReadLine());
             switch (firstChoose)
             {
@@ -169,11 +178,9 @@ namespace LR_7.Entities
                 case 2:
                     Console.Write("\nБаза билетов:\n");
                 
-                    for (int i = 1; i <= _ticketBase.Count; i++)
+                    for (int i = 0; i < _ticketBase.Count; i++)
                         Console.Write("\nНомер билета: " + i + _ticketBase[i].Info() + "\n");
-                
-                    Console.Write("\n");
-                
+
                     Console.Write("\nЧто вы хотите сделать:\n1. Добавить билет\n2. Удалить" +
                                   " билет\nВаш выбор: ");
                     int secondChoose = Convert.ToInt32(Console.ReadLine());
@@ -184,7 +191,18 @@ namespace LR_7.Entities
                     break;
                     
                 case 3:
+                    Console.Write("\nБаза тарифов:\n");
                     
+                    for (int i = 0; i < _taxeBase.Count; i++)
+                        Console.Write("\nНомер тарифа: " + i + _taxeBase[_direction[i]].Info() + "\n");
+                    
+                    Console.Write("\nЧто вы хотите сделать:\n1. Добавить тариф\n2. Удалить" +
+                                  " тариф\nВаш выбор: ");
+                    int thirdChoose = Convert.ToInt32(Console.ReadLine());
+                    if (thirdChoose == 1)
+                        this.AddTaxe();
+                    if (thirdChoose == 2)
+                        this.DeleteTaxe();
                     break;
 
                 default:
@@ -199,8 +217,11 @@ namespace LR_7.Entities
             int pass = Convert.ToInt32(Console.ReadLine());
             Passenger passenger = _passengerBase[pass];
             OnPChanging(passenger, false);
-            _passengerBase.Remove(_passengerBase[pass]);
-            Console.WriteLine("Удаление завершено.");
+            
+            if ( _passengerBase.Remove(_passengerBase[pass]))
+                Console.WriteLine("Удаление завершено.");
+            else
+                Console.WriteLine("Ошибка.");
         }
         
         private void DeleteTicket()
@@ -209,8 +230,24 @@ namespace LR_7.Entities
             int tick = Convert.ToInt32(Console.ReadLine());
             Ticket ticket = _ticketBase[tick];
             OnTChanging?.Invoke(ticket, false);
-            _ticketBase.Remove(_ticketBase[tick]);
-            Console.WriteLine("Удаление завершено.");
+            
+            if (_ticketBase.Remove(_ticketBase[tick]))
+                Console.WriteLine("Удаление завершено.");
+            else
+                Console.WriteLine("Ошибка.");
+        }
+        
+        private void DeleteTaxe()
+        {
+            Console.Write("Введите направление, которое нужно удалить: ");
+            string direct = Console.ReadLine();
+            Taxe taxe = _taxeBase[direct];
+            OnTaxeChanging?.Invoke(taxe, false);
+            
+            if (_taxeBase.Remove(direct) && _direction.Remove(direct))
+                Console.WriteLine("Удаление завершено.");
+            else
+                Console.WriteLine("Ошибка.");
         }
     }
 }

@@ -13,6 +13,7 @@ namespace LR_7
             airport.OnBuy += () =>Console.WriteLine("Покупка зарегистрирована.");
             airport.OnPChanging += jornal.ChPassanger;
             airport.OnTChanging += jornal.ChTicket;
+            airport.OnTaxeChanging += jornal.ChTaxe;
             
             bool work = true;
             while (work) 
