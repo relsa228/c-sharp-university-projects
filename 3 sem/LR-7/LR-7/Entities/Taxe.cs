@@ -6,7 +6,6 @@ namespace LR_7.Entities
     {
         public string EndPoint;
         public float Price;
-        public string Name;
 
         public Taxe()
         {

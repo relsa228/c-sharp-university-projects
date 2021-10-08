@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/LR-7.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/LR-7.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/ref/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/ref/LR-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/ref/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/ref/LR-7.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1z0DmS9hq07a6IE3flRmHno0Fk4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -74,8 +78,17 @@
       <updated>1633276280765</updated>
       <workItem from="1633276326009" duration="3948000" />
       <workItem from="1633346390059" duration="2830000" />
-      <workItem from="1633688597058" duration="4196000" />
+      <workItem from="1633688597058" duration="4253000" />
+      <workItem from="1633731089280" duration="5023000" />
     </task>
+    <task id="LOCAL-00001" summary="LR-7">
+      <created>1633692911387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633692911387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +112,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="LR-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="LR-7" />
   </component>
 </project>

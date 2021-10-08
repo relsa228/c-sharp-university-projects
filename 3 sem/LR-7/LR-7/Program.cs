@@ -21,12 +21,12 @@ namespace LR_7
                 string exitChoose;
                 
                 Console.Write("\nВас приветствуют Российские Императорские авиалинии!\n\nВыберите действие:" +
-                              "\n1. Купить билет\n" + "2. Сумма всех купленных билетов\n3. Изменение базы" +
-                              "\n4. Просмотр журнала\n5. Выход\nВаш выбор: "); 
+                              "\n1. Купить билет\n2. Список тарифов\n3. Финансы\n4. " +
+                              "Изменение базы\n5. Просмотр журнала\n6. Выход\nВаш выбор: "); 
                 int choose = Convert.ToInt32(Console.ReadLine());
 
                 switch (choose)
-                { 
+                {
                     case 1:
                         Passenger passenger = airport.AirRegistration();
                         if (passenger != null)
@@ -37,8 +37,17 @@ namespace LR_7
                         if (exitChoose == "N") 
                             work = false;
                         break;
-                     
+                    
                     case 2:
+                        airport.ReturnTaxe();
+                        
+                        Console.Write("\nПродолжить работу (Y/N): ");
+                        exitChoose = Console.ReadLine();
+                        if (exitChoose == "N") 
+                            work = false;
+                        break;
+                    
+                    case 3:
                         airport.ReturnPrice();
                         Console.Write("\nПродолжить работу (Y/N): ");
                         exitChoose = Console.ReadLine();
@@ -46,7 +55,7 @@ namespace LR_7
                             work = false;
                         break;
                     
-                    case 3:
+                    case 4:
                         airport.ChangeBase();
                         Console.Write("\nПродолжить работу (Y/N): ");
                         exitChoose = Console.ReadLine();
@@ -54,7 +63,7 @@ namespace LR_7
                             work = false;
                         break;
                     
-                    case 4:
+                    case 5:
                         jornal.ViewLog();
                         Console.Write("\nПродолжить работу (Y/N): ");
                         exitChoose = Console.ReadLine();
@@ -62,7 +71,7 @@ namespace LR_7
                             work = false;
                         break;
                     
-                    case 5:
+                    case 6:
                         work = false;
                         break;
   

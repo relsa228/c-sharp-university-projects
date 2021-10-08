@@ -10,18 +10,17 @@ namespace LR_7.Entities
         private string _citizenship;
         private string _gender;
         public string PassportNum { get; set; }
-        public float TotalSum { get; set; }
-        public List<Ticket> _inPropertyTicket;
+       // public float TotalSum { get; set; }
+        public List<Ticket> InPropertyTicket;
         
         public Passenger()
         {
-            _inPropertyTicket = new List<Ticket>();
+            InPropertyTicket = new List<Ticket>();
             FName = "";
             SName = "";
             _citizenship = "";
             _gender = "";
             PassportNum = "";
-            TotalSum = 0;
         }
 
         public void Registration()

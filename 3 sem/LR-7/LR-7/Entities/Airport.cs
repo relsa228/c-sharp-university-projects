@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LR_7.Entities
 {
@@ -20,13 +21,11 @@ namespace LR_7.Entities
         private List<Passenger> _passengerBase = new List<Passenger>();
         private List<Ticket> _ticketBase = new List<Ticket>();
         
-        private float _totalSum;
         private int _suitable;
 
         public Airport()
         {
-            this._suitable = 0;
-            this._totalSum = 0;
+            _suitable = 0;
         }
         
         public Passenger AirRegistration()
@@ -77,7 +76,7 @@ namespace LR_7.Entities
         {
             String finishPoint;
             
-            Console.Write("Введите пункт назначения: ");
+            Console.Write("\nВведите пункт назначения: ");
             finishPoint = Console.ReadLine();
                         
             Console.Write("\nВам подойдут следующие рейсы: ");
@@ -99,10 +98,8 @@ namespace LR_7.Entities
             int indexTic = Convert.ToInt32(Console.ReadLine());
             if (indexTic < _ticketBase.Count)
             {
-                Ticket temp = _ticketBase[indexTic]; 
-                _totalSum += temp.Price;
-                passenger.TotalSum += temp.Price;
-                passenger._inPropertyTicket.Add(temp);
+                Ticket temp = _ticketBase[indexTic];
+                passenger.InPropertyTicket.Add(temp);
                 OnBuy?.Invoke();
                 return;
             }
@@ -110,53 +107,55 @@ namespace LR_7.Entities
             Console.Write("\nТакого билета нет в базе.");
         }
 
-        private void AddTicket()
-        {
-            Ticket ticket = new Ticket();
-            ticket.AddNewTicket();
-            if (_taxeBase[ticket.FinishPoint] != null)
-            {
-                Taxe taxe = _taxeBase[ticket.FinishPoint];
-                ticket.Price = taxe.Price;
-                _ticketBase.Add(ticket);
-                OnTChanging?.Invoke(ticket, true);
-                Console.Write("\nБилет добавлен.");
-            }
-            else
-                Console.Write("\nОшибка.");
-        }
-
-        private void AddTaxe()
-        {
-            Taxe taxe = new Taxe();
-            taxe.AddTaxe(); 
-            _direction.Add(taxe.EndPoint);
-            _taxeBase.Add(taxe.EndPoint ,taxe);
-            OnTaxeChanging?.Invoke(taxe, true);
-            Console.Write("\nТариф добавлен.");
-        }
-        
         public void ReturnPrice()
         {
             Console.Write("\nВыберите вариант:\n1. Для одного пассажира\n2. " +
-                          "Сумма всех реализованных билетов\nВаш выбор: ");
+                          "Сумма всех реализованных билетов\n3. Пассажир, заплативший максимальную сумму.\nВаш выбор: ");
             int secondChoose = Convert.ToInt32(Console.ReadLine());
-            if (secondChoose == 1)
+            switch (secondChoose)
             {
-                Console.Write("\nИндекс пассажира в списке: ");
-                int index = Convert.ToInt32(Console.ReadLine());
-                if (index < _passengerBase.Count)
-                {
-                    Passenger temp = _passengerBase[index];
-                    Console.Write("Данный пассажир купил билетов на сумму: " + temp.TotalSum + " рублей.");
-                }
-                else
-                    Console.Write("Такого пассажира нет в базе.");
+                case 1:
+                    Console.Write("\nИндекс пассажира в списке: ");
+                    int index = Convert.ToInt32(Console.ReadLine());
+                    if (index < _passengerBase.Count)
+                    {
+                        Passenger temp = _passengerBase[index];
+                        Console.Write("Данный пассажир купил билетов на сумму: " + temp.InPropertyTicket.Sum(n => n.Price)
+                            + " рублей.");
+                    }
+                    else
+                        Console.Write("Такого пассажира нет в базе.");
+                    break;
+                
+                case 2:
+                    float totalSum = _passengerBase.Sum(n => n.InPropertyTicket.Sum(n => n.Price));
+                    Console.Write("\nСумма всех проданных билетов: " + totalSum + " рублей.");
+                    break;
+                
+                case 3:
+                    var result = from u in _passengerBase
+                                            orderby u.InPropertyTicket.Sum(t => t.Price) descending 
+                                                select u;
+                    
+                    Console.Write("\n" + result.First().FName + " " + result.First().SName);
+                    break;
+
+                default:
+                    Console.WriteLine("Неверный ввод.");
+                    break;
             }
-            else if (secondChoose == 2)
-                Console.Write("\nСумма всех проданных билетов: " + _totalSum + " рублей.");
         }
 
+        public void ReturnTaxe()
+        {
+            Console.Write("\nСписок текущих тарифов (от дорогих к дешевым):");
+            var result = from taxe in _taxeBase
+                orderby taxe.Value.Price descending 
+                select taxe;
+            foreach (KeyValuePair<string, Taxe> taxe in result)
+                Console.Write("\n"+taxe.Value.EndPoint+$" (Цена: {taxe.Value.Price})");
+        }
+        
         public void ChangeBase()
         {
             Console.Write("\nКакую базу необходимо изменить:\n1. Базу пассажиров\n2. Базу" +
@@ -209,6 +208,32 @@ namespace LR_7.Entities
                     Console.WriteLine("Неверный ввод.");
                     break;
             }
+        }
+        
+        private void AddTicket()
+        {
+            Ticket ticket = new Ticket();
+            ticket.AddNewTicket();
+            if (_taxeBase[ticket.FinishPoint] != null)
+            {
+                Taxe taxe = _taxeBase[ticket.FinishPoint];
+                ticket.Price = taxe.Price;
+                _ticketBase.Add(ticket);
+                OnTChanging?.Invoke(ticket, true);
+                Console.Write("\nБилет добавлен.");
+            }
+            else
+                Console.Write("\nОшибка.");
+        }
+
+        private void AddTaxe()
+        {
+            Taxe taxe = new Taxe();
+            taxe.AddTaxe(); 
+            _direction.Add(taxe.EndPoint);
+            _taxeBase.Add(taxe.EndPoint ,taxe);
+            OnTaxeChanging?.Invoke(taxe, true);
+            Console.Write("\nТариф добавлен.");
         }
 
         private void DeletePassanger()
