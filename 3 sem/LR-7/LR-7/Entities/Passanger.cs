@@ -10,7 +10,6 @@ namespace LR_7.Entities
         private string _citizenship;
         private string _gender;
         public string PassportNum { get; set; }
-       // public float TotalSum { get; set; }
         public List<Ticket> InPropertyTicket;
         
         public Passenger()

@@ -7,6 +7,7 @@
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Program.cs" afterDir="false" />
@@ -79,7 +80,8 @@
       <workItem from="1633276326009" duration="3948000" />
       <workItem from="1633346390059" duration="2830000" />
       <workItem from="1633688597058" duration="4253000" />
-      <workItem from="1633731089280" duration="5023000" />
+      <workItem from="1633731089280" duration="5098000" />
+      <workItem from="1633783603032" duration="8505000" />
     </task>
     <task id="LOCAL-00001" summary="LR-7">
       <created>1633692911387</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633692911387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LR-7">
+      <created>1633736158606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633736158606</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

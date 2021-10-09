@@ -15,8 +15,11 @@ namespace LR_7.Entities
             {
                 Console.Write("\nКакой журнал нужно просмотреть:\n1. Журнал изменения базы " +
                               "пассажиров\n2. Журнал изменения базы билетов\n3. Журнал изменения " +
-                              "базы тарифов\nВаш выбор: ");
-                int choose = Convert.ToInt32(Console.ReadLine());
+                              "базы тарифов\n");
+                int choose;
+                do 
+                    Console.Write("Ваш выбор: ");
+                while (!int.TryParse(Console.ReadLine(), out choose));
                 switch (choose)
                 {
                     case 1:
@@ -35,7 +38,7 @@ namespace LR_7.Entities
                         break;
                     
                     default:
-                        Console.WriteLine("Неверный ввод");
+                        Console.Write("Неверный ввод.");
                         break;
                 }
             }
