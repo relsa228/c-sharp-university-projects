@@ -235,8 +235,8 @@ namespace LR_7.Entities
                     for (int i = 0; i < _ticketBase.Count; i++)
                         Console.WriteLine("\nНомер билета: " + i + _ticketBase[i].Info());
 
-                    Console.Write("\nЧто вы хотите сделать:\n1. Добавить билет\n2. Удалить" +
-                                  " билет\n");
+                    Console.Write("\nЧто вы хотите сделать (выход - любое число, кроме 1 и 2):\n1. Добавить билет\n2. " +
+                                  "Удалить" + " билет\n");
                     int secondChoose;
                     do 
                         Console.Write("Ваш выбор: ");
@@ -254,8 +254,8 @@ namespace LR_7.Entities
                     for (int i = 0; i < _taxeBase.Count; i++)
                         Console.WriteLine("\nНомер тарифа: " + i + _taxeBase[_directionBase[i]].Info());
                     
-                    Console.Write("\nЧто вы хотите сделать:\n1. Добавить тариф\n2. Удалить" +
-                                  " тариф\n");
+                    Console.Write("\nЧто вы хотите сделать (выход - любое число, кроме 1 и 2):\n1. Добавить тариф\n2. " +
+                                  "Удалить" + " тариф\n");
                     int thirdChoose;
                     do 
                         Console.Write("Ваш выбор: ");

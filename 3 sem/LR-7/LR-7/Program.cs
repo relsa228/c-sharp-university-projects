@@ -19,7 +19,6 @@ namespace LR_7
             while (work) 
             { 
                 string exitChoose;
-                
                 Console.Write("\nВас приветствуют Российские Императорские авиалинии!\n\nВыберите действие:" +
                               "\n1. Купить билет\n2. Список тарифов\n3. Финансы\n4. " +
                               "Изменение базы\n5. Просмотр журнала\n6. Выход\n");
@@ -43,7 +42,6 @@ namespace LR_7
                     
                     case 2:
                         airport.ReturnTaxe();
-                        
                         Console.Write("\n\nПродолжить работу (Y/N): ");
                         exitChoose = Console.ReadLine();
                         if (exitChoose == "N") 
