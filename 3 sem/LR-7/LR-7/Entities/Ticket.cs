@@ -7,7 +7,6 @@ namespace LR_7.Entities
         public string FinishPoint;
         public float Price { get; set; }
         private string _bortNum;
-        private string Type;
         private string _date;
         public Ticket()
         {

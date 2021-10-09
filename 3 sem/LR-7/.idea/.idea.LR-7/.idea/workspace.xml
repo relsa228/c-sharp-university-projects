@@ -6,17 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Jornal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Passanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Taxe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Ticket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/ref/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/ref/LR-7.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/ref/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/ref/LR-7.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,8 @@
       <workItem from="1633346390059" duration="2830000" />
       <workItem from="1633688597058" duration="4253000" />
       <workItem from="1633731089280" duration="5098000" />
-      <workItem from="1633783603032" duration="8505000" />
+      <workItem from="1633783603032" duration="8570000" />
+      <workItem from="1633793079563" duration="768000" />
     </task>
     <task id="LOCAL-00001" summary="LR-7">
       <created>1633692911387</created>
@@ -97,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633736158606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="LR-7">
+      <created>1633792820928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633792820928</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
