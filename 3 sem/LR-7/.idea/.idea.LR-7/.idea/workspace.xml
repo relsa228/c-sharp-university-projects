@@ -4,7 +4,7 @@
     <projectFile>LR-7/LR-7.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="LR-7" />
+    <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1633731089280" duration="5098000" />
       <workItem from="1633783603032" duration="8570000" />
       <workItem from="1633793079563" duration="853000" />
-      <workItem from="1633794345933" duration="323000" />
+      <workItem from="1633794345933" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="LR-7">
       <created>1633692911387</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633794661937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="LR-7">
+      <created>1633794684272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633794684272</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
