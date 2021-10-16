@@ -1,4 +1,4 @@
-﻿using System;
+﻿using LR_9.Domain;
 
 namespace LR_9
 {
@@ -6,7 +6,8 @@ namespace LR_9
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Factory factory = new Factory("Прорезиненные палки для швабр", 228);
+            string suka = factory.Specialization;
         }
     }
 }

@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/.idea/.idea.LR-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/.idea/.idea.LR-8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/Employee/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/Employee/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/LR-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/LR-8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/LR-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/LR-8.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/NewEmployeeList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/bin/Debug/net5.0/NewEmployeeList.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/obj/Debug/net5.0/LR-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/obj/Debug/net5.0/LR-8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/obj/Debug/net5.0/LR-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/obj/Debug/net5.0/LR-8.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/ISerializer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +74,7 @@
       <workItem from="1633793079563" duration="853000" />
       <workItem from="1633794345933" duration="355000" />
       <workItem from="1634316096304" duration="682000" />
+      <workItem from="1634400555980" duration="89000" />
     </task>
     <task id="LOCAL-00001" summary="LR-7">
       <created>1633692911387</created>

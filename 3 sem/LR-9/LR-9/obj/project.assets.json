@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "LR-9.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/LR-9.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LR-9.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LR-9.Domain/1.0.0": {
+      "type": "project",
+      "path": "../LR-9.Domain/LR-9.Domain.csproj",
+      "msbuildProject": "../LR-9.Domain/LR-9.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "LR-9.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ralia\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\LR-9.Domain\\LR-9.Domain.csproj": {
+              "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\LR-9.Domain\\LR-9.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
