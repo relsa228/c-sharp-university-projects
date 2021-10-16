@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 
@@ -19,9 +17,9 @@ namespace LR_8
             collection.Add(employeeSecond);
             Employee employeeThird = new Employee("Жмышенко Валерий", 54, false);
             collection.Add(employeeThird);
-            Employee employeeFourth = new Employee("Йозеф Швейк", 20, false);
+            Employee employeeFourth = new Employee("Анисимов Владимир", 75, true);
             collection.Add(employeeFourth);
-            Employee employeeFifth = new Employee("Джордж Флойд", 31, false);
+            Employee employeeFifth = new Employee("Владымцев Вадим", 25, false);
             collection.Add(employeeFifth);
             Employee employeeSixth = new Employee("Бутома Виталий", 27, true);
             collection.Add(employeeSixth);
