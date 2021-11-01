@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\LR-9.Domain\LR-9.Domain.csproj" />
+      <ProjectReference Include="..\Serializer\Serializer.csproj" />
     </ItemGroup>
 
 </Project>

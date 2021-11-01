@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factories>
+  <Factory Specialization="Прорезиненные палки для швабр" Workers="228" Budget="1000">
+    <DetailsInWarehouse>0</DetailsInWarehouse>
+    <ProductsInWarehouse>0</ProductsInWarehouse>
+  </Factory>
+  <Factory Specialization="Водка Калинвал" Workers="228" Budget="1000">
+    <DetailsInWarehouse>0</DetailsInWarehouse>
+    <ProductsInWarehouse>0</ProductsInWarehouse>
+  </Factory>
+  <Factory Specialization="Бюсты Ленина" Workers="228" Budget="1000">
+    <DetailsInWarehouse>0</DetailsInWarehouse>
+    <ProductsInWarehouse>0</ProductsInWarehouse>
+  </Factory>
+</Factories>

@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/LR-9.Domain.dll": {}
         }
+      },
+      "Serializer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "LR-9.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Serializer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Serializer.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../LR-9.Domain/LR-9.Domain.csproj",
       "msbuildProject": "../LR-9.Domain/LR-9.Domain.csproj"
+    },
+    "Serializer/1.0.0": {
+      "type": "project",
+      "path": "../Serializer/Serializer.csproj",
+      "msbuildProject": "../Serializer/Serializer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "LR-9.Domain >= 1.0.0"
+      "LR-9.Domain >= 1.0.0",
+      "Serializer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +74,9 @@
           "projectReferences": {
             "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\LR-9.Domain\\LR-9.Domain.csproj": {
               "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\LR-9.Domain\\LR-9.Domain.csproj"
+            },
+            "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\Serializer\\Serializer.csproj": {
+              "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-9\\Serializer\\Serializer.csproj"
             }
           }
         }

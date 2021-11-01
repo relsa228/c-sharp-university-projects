@@ -5,7 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1fc4ac-53e7-478d-8b33-74d9f239c23a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/ISerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/Factory/Factory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/Factory/Warehouse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LR-9/Serializer/Serializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/Entities/Airport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/bin/Debug/net5.0/LR-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-7/obj/Debug/net5.0/LR-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-8/.idea/.idea.LR-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/.idea/.idea.LR-8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-8/LR-8/FileProc/FileService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-8/LR-8/FileProc/FileService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/Factory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/ISerializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/ISerializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/PartsWarehouse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/LR-9.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/LR-9.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/LR-9.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/LR-9.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/ref/LR-9.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/bin/Debug/net5.0/ref/LR-9.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/LR-9.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/ref/LR-9.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9.Domain/obj/Debug/net5.0/ref/LR-9.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/LR-9.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/LR-9.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/Debug/net5.0/LR-9.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/Debug/net5.0/LR-9.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/LR-9.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/LR-9.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/LR-9/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/LR-9/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/Serializer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/Serializer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/obj/Serializer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/obj/Serializer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LR-9/Serializer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../LR-9/Serializer/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +110,9 @@
       <workItem from="1633794345933" duration="355000" />
       <workItem from="1634316096304" duration="682000" />
       <workItem from="1634400555980" duration="89000" />
+      <workItem from="1635321687369" duration="1039000" />
+      <workItem from="1635766254110" duration="1344000" />
+      <workItem from="1635767753939" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="LR-7">
       <created>1633692911387</created>

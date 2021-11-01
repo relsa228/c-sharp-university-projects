@@ -27,11 +27,11 @@ namespace LR_8
         {
             using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.OpenOrCreate)))
             {
-                foreach (Employee s in data)
+                foreach (Employee employee in data)
                 {
-                    writer.Write(s.Name);
-                    writer.Write(s.Age);
-                    writer.Write(s.HigherEducation);
+                    writer.Write(employee.Name);
+                    writer.Write(employee.Age);
+                    writer.Write(employee.HigherEducation);
                 }
             }
         }

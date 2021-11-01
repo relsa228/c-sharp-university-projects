@@ -180,9 +180,12 @@ namespace LR_7.Entities
 
                     if (pass < _passengerBase.Count && pass >= 0)
                     {
-                        var directionGroup = _passengerBase[pass].InPropertyTicket.GroupBy(p=>p.FinishPoint);
+                        var directionGroup = _passengerBase[pass].InPropertyTicket
+                            .GroupBy(p=>p.FinishPoint)
+                            .Select(g=>new {Name=g.Key, Sum=g.Sum(t=>t.Price)});
+                        
                         foreach (var group in directionGroup)
-                            Console.WriteLine($"Направление: {group.Key}\nПотрачено: {group.Count()*_taxeBase[group.Key].Price} рублей\n");
+                            Console.WriteLine($"Направление: {group.Name}\nПотрачено: {group.Sum} рублей\n");
                         break;
                     }
                     else
