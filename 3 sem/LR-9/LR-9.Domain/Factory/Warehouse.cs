@@ -1,11 +1,19 @@
-﻿namespace LR_9.Domain.Factory
+﻿using System;
+
+namespace LR_9.Domain.Factory
 {
+    [Serializable]
     public class Warehouse
     {
         public int InWarehouse;
-        public readonly int MaxCapacity;
-        public readonly string HeadOfWarehouse;
+        public int MaxCapacity;
+        public string HeadOfWarehouse;
 
+        public Warehouse()
+        {
+            
+        }
+        
         public Warehouse(string headOfWarehouse)
         {
             InWarehouse = 0;

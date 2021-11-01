@@ -2,14 +2,18 @@
 
 namespace LR_9.Domain.Factory
 {
+    [Serializable]
     public class Factory
     {
         public Warehouse DetailWarehouse = new Warehouse("Валерий Альбертович Шпак");
         public Warehouse ProductWarehouse = new Warehouse("Богомолов Александр Александрович");
         public int Workers;
-        public readonly string Specialization;
+        public string Specialization;
         public int Budget;
-        
+        public Factory()
+        {
+            
+        }
         public Factory(string specialization, int workers, int budget)
         {
             Specialization = specialization;
@@ -44,6 +48,13 @@ namespace LR_9.Domain.Factory
             }
             else
                 Console.WriteLine("На складе не хватает изделий.");
+        }
+
+        public void Info()
+        {
+            string info = "Специальность завода: " + this.Specialization + "\nРаботников: " + this.Workers +
+                          "\nБюджет завода: " + this.Budget + "\nДеталей на складе: " + this.DetailWarehouse.InWarehouse 
+                          + "\nПродукта на складе: " + this.ProductWarehouse.InWarehouse;
         }
     }
 }
