@@ -4,17 +4,17 @@ using LR_9.Domain.Factory;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Net;
+using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Serializer
 {
     public class Serializer:ISerializer
     {
-        public IEnumerable<Factory> DeSerializeByLINQ(string fileName)
+        public IEnumerable<Factory> DeSerializeByLINQ(string fileName) //работает
         {
             XDocument xdoc = XDocument.Load(fileName);
             
@@ -35,7 +35,7 @@ namespace Serializer
             }
         }
 
-        public IEnumerable<Factory> DeSerializeXML(string fileName)
+        public IEnumerable<Factory> DeSerializeXML(string fileName) //работает
         {
             XmlSerializer formatter = new XmlSerializer(typeof(Collection<Factory>));
             
@@ -46,12 +46,17 @@ namespace Serializer
             }
         }
 
-        public IEnumerable<Factory> DeSerializeJSON(string fileName)
+        public IEnumerable<Factory> DeSerializeJSON(string fileName) //работает
         {
-            return null;
+            using (FileStream fs = new FileStream(fileName,FileMode.Open))
+            {
+                var options = new JsonSerializerOptions { IncludeFields = true };
+                var result = JsonSerializer.DeserializeAsync<List<Factory>>(fs,options).Result;
+                return result;
+            }
         }
 
-        public void SerializeByLINQ(IEnumerable<Factory> factories, string fileName)
+        public void SerializeByLINQ(IEnumerable<Factory> factories, string fileName) //работает
         {
             XDocument factoriesXml = new XDocument();
             XElement factoriesRoot = new XElement("Factories");
@@ -69,7 +74,6 @@ namespace Serializer
                 factory.Add(factoryDetails);
                 factory.Add(factoryProducts);
                 factoriesRoot.Add(factory);
-             
             }
             factoriesXml.Add(factoriesRoot);
             
@@ -79,7 +83,7 @@ namespace Serializer
             factoriesXml.Save(fileName);
         }
 
-        public void SerializeXML(IEnumerable<Factory> factories, string fileName)
+        public void SerializeXML(IEnumerable<Factory> factories, string fileName) //работает
         {
             if(File.Exists(fileName))
                 File.Delete(fileName);
@@ -92,17 +96,15 @@ namespace Serializer
             }
         }
 
-        public async Task SerializeJSON(IEnumerable<Factory> factories, string fileName)
+        public void SerializeJSON(IEnumerable<Factory> factories, string fileName) //работает
         {
             if(File.Exists(fileName))
                 File.Delete(fileName);
             
             using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                foreach (var factoryEl in factories)
-                {
-                    await JsonSerializer.SerializeAsync<Factory>(fs, factoryEl);
-                }
+                var options = new JsonSerializerOptions { IncludeFields = true };
+                JsonSerializer.SerializeAsync<List<Factory>>(fs,factories.ToList(),options).Wait();
             }
         }
     }

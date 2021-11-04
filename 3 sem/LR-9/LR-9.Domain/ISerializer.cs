@@ -10,6 +10,6 @@ namespace LR_9.Domain
         IEnumerable<Factory.Factory> DeSerializeJSON(string fileName); 
         void SerializeByLINQ(IEnumerable<Factory.Factory> xxx,	string fileName); 
         void SerializeXML(IEnumerable<Factory.Factory> xxx,	string fileName); 
-        Task SerializeJSON(IEnumerable<Factory.Factory> xxx, string fileName); 
+        void SerializeJSON(IEnumerable<Factory.Factory> xxx, string fileName); 
     }
 }

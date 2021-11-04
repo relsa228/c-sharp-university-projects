@@ -19,3 +19,4 @@ C:\Users\ralia\Desktop\labs git\ISP\3 sem\LR-9\LR-9\obj\Debug\net5.0\LR-9.dll
 C:\Users\ralia\Desktop\labs git\ISP\3 sem\LR-9\LR-9\obj\Debug\net5.0\ref\LR-9.dll
 C:\Users\ralia\Desktop\labs git\ISP\3 sem\LR-9\LR-9\obj\Debug\net5.0\LR-9.pdb
 C:\Users\ralia\Desktop\labs git\ISP\3 sem\LR-9\LR-9\obj\Debug\net5.0\LR-9.genruntimeconfig.cache
+C:\Users\ralia\Desktop\labs git\ISP\3 sem\LR-9\LR-9\bin\Debug\net5.0\Newtonsoft.Json.dll

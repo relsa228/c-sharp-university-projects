@@ -55,6 +55,8 @@ namespace LR_9.Domain.Factory
             string info = "Специальность завода: " + this.Specialization + "\nРаботников: " + this.Workers +
                           "\nБюджет завода: " + this.Budget + "\nДеталей на складе: " + this.DetailWarehouse.InWarehouse 
                           + "\nПродукта на складе: " + this.ProductWarehouse.InWarehouse;
+            Console.WriteLine(info);
+            Console.WriteLine("--------------------------");
         }
     }
 }
