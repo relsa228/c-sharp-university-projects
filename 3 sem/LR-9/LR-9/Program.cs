@@ -9,12 +9,12 @@ namespace LR_9
         static void Main(string[] args)
         {
            Collection<Factory> collection = new Collection<Factory>();
-            collection.Add(new Factory("Прорезиненные палки для швабр", 228, 1000));
-            collection.Add(new Factory("Водка Коленвал", 1337, 30));
-            collection.Add(new Factory("Бюсты Ленина", 1488, 6000000));
-            collection.Add(new Factory("Пыняходы", 168, 2000));
-            collection.Add(new Factory("Кипы", 666, 666));
-            collection.Add(new Factory("Дагестанские кирпичи", 140000000, -28));
+            collection.Add(new Factory("Гвозди", 728, 1000));
+            collection.Add(new Factory("Коленвалы", 1307, 30));
+            collection.Add(new Factory("Бюсты", 1508, 6000000));
+            collection.Add(new Factory("Обувь", 168, 2000));
+            collection.Add(new Factory("Лопапты", 6606, 666));
+            collection.Add(new Factory("Кирпичи", 1400, -28));
 
             Serializer.Serializer serializer = new Serializer.Serializer();
             serializer.SerializeByLINQ(collection, "FactoriesLINQ.xml");

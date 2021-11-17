@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Factories>
-  <Factory Specialization="Прорезиненные палки для швабр" Workers="228" Budget="1000">
+  <Factory Specialization="Гвозди" Workers="728" Budget="1000">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
-  <Factory Specialization="Водка Коленвал" Workers="1337" Budget="30">
+  <Factory Specialization="Коленвалы" Workers="1307" Budget="30">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
-  <Factory Specialization="Бюсты Ленина" Workers="1488" Budget="6000000">
+  <Factory Specialization="Бюсты" Workers="1508" Budget="6000000">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
-  <Factory Specialization="Пыняходы" Workers="168" Budget="2000">
+  <Factory Specialization="Обувь" Workers="168" Budget="2000">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
-  <Factory Specialization="Кипы" Workers="666" Budget="666">
+  <Factory Specialization="Лопапты" Workers="6606" Budget="666">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
-  <Factory Specialization="Дагестанские кирпичи" Workers="140000000" Budget="-28">
+  <Factory Specialization="Кирпичи" Workers="1400" Budget="-28">
     <DetailsInWarehouse>0</DetailsInWarehouse>
     <ProductsInWarehouse>0</ProductsInWarehouse>
   </Factory>
