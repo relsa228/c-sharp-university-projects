@@ -5,8 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ac7d21e-b802-45b7-bf43-ea1e10ad384a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/Classes/FileService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.Main/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.Main/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LR-10.Main/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/LR-10.MainLb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/LR-10.FileServiceLib.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/Debug/net5.0/LR-10.MainLb.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/Debug/net5.0/LR-10.MainLb.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/Debug/net5.0/LR-10.MainLb.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/Debug/net5.0/LR-10.MainLb.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/Debug/net5.0/LR-10.MainLb.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/Debug/net5.0/LR-10.MainLb.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/Debug/net5.0/LR-10.MainLb.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/Debug/net5.0/LR-10.MainLb.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/LR-10.MainLb.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/LR-10.MainLb.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/LR-10.MainLb.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/LR-10.MainLb.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/LR-10.MainLb.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/LR-10.MainLb.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10.MainLb/obj/rider.project.restore.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-10.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/IFileService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/Interfaces/IFileService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/LR-10.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/LR-10.Main.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/LR-10.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/LR-10.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/LR-10.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/LR-10.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/LR-10.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/LR-10.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/LR-10.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/LR-10.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/Debug/net5.0/LR-10.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/LR-10.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/LR-10.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/LR-10.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/LR-10.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/LR-10.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/LR-10.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.Main/obj/LR-10.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-10.FileServiceLib/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-10/obj/rider.project.restore.info" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +55,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/LR-10/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LR-10.Domain/obj/Debug/net5.0/LR-10.Domain.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LR-10.Domain/FileService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LR-10.Domain/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LR-10.Main/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LR-10.Main/Employee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LR-10.FileServiceLib/Interfaces/IFileService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LR-10.Main/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="212QejqehhHswezXEgm7tFR3lON" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +82,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LR-10/LR-10.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/LR-10.Main/LR-10.Main.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -65,6 +103,7 @@
       <updated>1637136807115</updated>
       <workItem from="1637136850323" duration="1150000" />
       <workItem from="1637226861651" duration="1691000" />
+      <workItem from="1637264389325" duration="3207000" />
     </task>
     <task id="LOCAL-00001" summary="LR-10">
       <created>1637136975931</created>
@@ -94,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637228508059</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="LR-10">
+      <created>1637264433758</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637264433758</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,8 +164,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="LR-10" />
     <MESSAGE value="LR_10" />
-    <option name="LAST_COMMIT_MESSAGE" value="LR_10" />
+    <MESSAGE value="LR-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="LR-10" />
   </component>
 </project>

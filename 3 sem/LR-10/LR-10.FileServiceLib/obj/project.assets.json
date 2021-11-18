@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10\\LR-10.csproj",
-      "projectName": "LR-10",
-      "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10\\LR-10.csproj",
+      "projectUniqueName": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.FileServiceLib\\LR-10.FileServiceLib.csproj",
+      "projectName": "LR-10.FileServiceLib",
+      "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.FileServiceLib\\LR-10.FileServiceLib.csproj",
       "packagesPath": "C:\\Users\\ralia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10\\obj\\",
+      "outputPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.FileServiceLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ralia\\AppData\\Roaming\\NuGet\\NuGet.Config",

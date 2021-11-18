@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LR_10
+namespace LR_10.Main
 {
     class Program
     {

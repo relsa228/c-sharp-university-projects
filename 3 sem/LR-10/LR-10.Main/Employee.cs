@@ -1,4 +1,4 @@
-﻿namespace LR_10
+﻿namespace LR_10.Main
 {
     public class Employee
     {
