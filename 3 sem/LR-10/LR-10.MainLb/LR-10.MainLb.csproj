@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>LR_10_lib</RootNamespace>
+        <RootNamespace>LR_10.MainLb</RootNamespace>
     </PropertyGroup>
 
 </Project>

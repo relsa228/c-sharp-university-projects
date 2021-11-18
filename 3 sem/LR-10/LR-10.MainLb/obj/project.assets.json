@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.Domain\\LR-10.Domain.csproj",
-      "projectName": "LR-10.Domain",
-      "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.Domain\\LR-10.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.MainLb\\LR-10.MainLb.csproj",
+      "projectName": "LR-10.MainLb",
+      "projectPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.MainLb\\LR-10.MainLb.csproj",
       "packagesPath": "C:\\Users\\ralia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.Domain\\obj\\",
+      "outputPath": "C:\\Users\\ralia\\Desktop\\labs git\\ISP\\3 sem\\LR-10\\LR-10.MainLb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ralia\\AppData\\Roaming\\NuGet\\NuGet.Config",
