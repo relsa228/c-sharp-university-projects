@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR-10.Main", "LR-10.Main\LR-10.Main.csproj", "{3F0BAA33-0208-47DE-8046-49341C246B7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR-10.FileServiceLib", "LR-10.FileServiceLib\LR-10.FileServiceLib.csproj", "{78174FED-EAE0-40CC-B063-D53C81139B08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR-10FileServiceLib", "LR-10FileServiceLib\LR-10FileServiceLib.csproj", "{78174FED-EAE0-40CC-B063-D53C81139B08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
