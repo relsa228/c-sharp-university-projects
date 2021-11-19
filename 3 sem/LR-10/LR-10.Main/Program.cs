@@ -8,7 +8,7 @@ namespace LR_10.Main
     {
         static void Main(string[] args)
         {
-            const string Dll = @"LR-10FileServiceLib.dll";
+            const string Dll = "LR-10FileServiceLib.dll";
             const string Json = "Metadata.json";
 
             List<Employee> employees = new List<Employee>();
