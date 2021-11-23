@@ -13,7 +13,7 @@ namespace LR_11
         static async Task Main(string[] args) 
         {
             //Первое задание
-            object first = "высший приоритет";
+            object first = "высокий приоритет";
             object second = "низкий приоритет";
             
             Integrate integrate = new Integrate();
@@ -37,7 +37,7 @@ namespace LR_11
                 Func<Worker, bool> retFunc = Filter;
                 
                 Task writeToStream = service.WriteToStream(stream);
-                Task copyFromStream = service.CopyFromStream(stream, "Test1.txt");
+                Task copyFromStream = service.CopyFromStream(stream, "Test.txt");
                 
                 Console.WriteLine($"Статус задачи WriteToStream: {writeToStream.Status}");
                 writeToStream.Start();
@@ -55,7 +55,7 @@ namespace LR_11
                 
                 Console.WriteLine("---------------------------------------------");
                 
-                Task<int> stat =  Task.Run(()=>service.GetStatisticsAsync("Test1.txt", retFunc));
+                Task<int> stat =  Task.Run(()=>service.GetStatisticsAsync("Test.txt", retFunc));
 
                 Console.WriteLine($"\nКоличество объектов, удовлетворяющих условию: {stat.Result}");
             }

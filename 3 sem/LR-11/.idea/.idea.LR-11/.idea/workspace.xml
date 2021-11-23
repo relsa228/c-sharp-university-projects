@@ -5,57 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ae0d49a-53a3-4bb5-b9ee-3ef49a7485b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/Test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/WorkerLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/WorkerLib.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/Integrate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/SinIntegrate.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/SinIntegrate.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/SinIntegrate.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/SinIntegrate.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SinIntegrate/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/StreamService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/Worker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/WorkerLib.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/bin/Debug/net5.0/WorkerLib.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/bin/Debug/net5.0/WorkerLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/bin/Debug/net5.0/WorkerLib.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/bin/Debug/net5.0/ref/WorkerLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/WorkerLib.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/Debug/net5.0/ref/WorkerLib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/WorkerLib.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/WorkerLib.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/WorkerLib.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkerLib/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LR-11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LR-11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/LR-11.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/LR-11.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-11/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/LR-11.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/LR-11.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/LR-11.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/bin/Debug/net5.0/LR-11.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/obj/LR-11.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/LR-11.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LR-11/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LR-11/obj/Debug/net5.0/LR-11.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SinIntegrate/obj/Debug/net5.0/SinIntegrate.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +84,7 @@
       <workItem from="1637415819249" duration="5546000" />
       <workItem from="1637569333043" duration="1639000" />
       <workItem from="1637654128568" duration="16517000" />
+      <workItem from="1637692541513" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="LR-11">
       <created>1637329031996</created>
