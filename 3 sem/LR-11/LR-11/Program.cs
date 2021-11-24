@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using SinIntegrate;
 using WorkerLib;
 
-
 namespace LR_11
 {
     class Program
     {
+        public delegate void Condition();
         static async Task Main(string[] args) 
         {
             //Первое задание
@@ -37,23 +37,12 @@ namespace LR_11
                 Func<Worker, bool> retFunc = Filter;
                 
                 Task writeToStream = service.WriteToStream(stream);
+                await Task.Delay(100);
                 Task copyFromStream = service.CopyFromStream(stream, "Test.txt");
-                
-                Console.WriteLine($"Статус задачи WriteToStream: {writeToStream.Status}");
-                writeToStream.Start();
-                Console.WriteLine($"Статус задачи WriteToStream: {writeToStream.Status}");
-                writeToStream.Wait();
-                Console.WriteLine($"Статус задачи WriteToStream: {writeToStream.Status}");
+
+                await Task.WhenAll(new Task[] { writeToStream, copyFromStream });
                 
                 Console.WriteLine("=============================================");
-
-                Console.WriteLine($"Статус задачи CopyFromStream: {copyFromStream.Status}");
-                copyFromStream.Start();
-                Console.WriteLine($"Статус задачи CopyFromStream: {copyFromStream.Status}");
-                copyFromStream.Wait();
-                Console.WriteLine($"Статус задачи CopyFromStream: {copyFromStream.Status}");
-                
-                Console.WriteLine("---------------------------------------------");
                 
                 Task<int> stat =  Task.Run(()=>service.GetStatisticsAsync("Test.txt", retFunc));
 
